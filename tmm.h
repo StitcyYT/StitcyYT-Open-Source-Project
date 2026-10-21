@@ -32,6 +32,16 @@ void csub(long long a, long long b, long long *To) {
     *To = (a-az)-(b-az);
 }
 
-#endif // TMM_IMPLEMENTATION
+void cinterp(float start, float end, float percentage, float *To) {
+    if (!To) return;
+    
+    // safe check
+    if (percentage < 0.0f) percentage = 0.0f;
+    if (percentage > 1.0f) percentage = 1.0f;
+    
+    // start + percentage * (end - start) is f###ed
+    *To = start + percentage * (end - start);
+}
 
+#endif // TMM_IMPLEMENTATION
 #endif // TMM_H
