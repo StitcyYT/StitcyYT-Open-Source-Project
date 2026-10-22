@@ -8,7 +8,7 @@
 #ifndef TMM_H
 #define TMM_H
 
-//defenitions
+//definitions
 #define pi 3.14159265358979323846 // HAHAHA GET PI'ED
 #define e 2.71828182845904523536 // e
 #define _zta 0.57721566490153286060 // zeta
